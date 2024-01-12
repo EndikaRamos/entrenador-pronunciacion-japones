@@ -49,6 +49,25 @@ Este script genera archivos de audio con la pronunciación en japonés y el sign
 - Los archivos de audio se generarán en una carpeta temporal llamada `temp` en el directorio donde se ejecuta el script.
 - Los números reproducidos irán desde el 1 hasta el 99 y no se repetirán en cada ejecución del script.
 
+### 3. generar_combinaciones_hiragana
+
+Este script genera ejercicios de combinación entre pronunciación en japonés (romaji) y caracteres hiragana. Cada ejercicio consiste en 12 opciones aleatorias sin repeticiones, y se generan múltiples conjuntos de ejercicios. Puedes añadir y modificar los hiraganas con los que uses necesites!
+
+#### Uso
+
+1. Clona o descarga este repositorio.
+2. Ejecuta el script `3_generar_combinaciones_hiragana.py`.
+3. El script generará 15 conjuntos de ejercicios, cada uno con 12 opciones aleatorias de pronunciación en japonés y caracteres hiragana.
+
+#### Notas
+
+- Asegúrate de tener una conexión a internet activa para el correcto funcionamiento del script.
+- Las opciones incluyen números y hiraganas, y no se repetirán dentro de cada conjunto de ejercicios.
+- Los conjuntos de ejercicios y sus respuestas se imprimirán por separado en la consola.
+- Los hiraganas se representan con el carácter "・" al final para indicar la separación en japonés.
+
+Recuerda ajustar la cantidad de conjuntos (`numero_combinaciones`) según tus necesidades.
+
 ## Audios preparados
 
 Audios preparados
