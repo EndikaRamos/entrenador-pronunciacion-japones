@@ -21,10 +21,17 @@ parec --format=s16le --rate=44100 --channels=2 --device="dispositivo" | tee >(so
 
 ## Detalles del comando
 parec: Herramienta de PulseAudio para capturar audio desde un dispositivo.
+
 --format=s16le: Formato de audio PCM de 16 bits en little-endian.
+
 --rate=44100: Frecuencia de muestreo de 44100 Hz (comúnmente utilizada para audio de calidad CD).
+
 --channels=2: Dos canales de audio (estéreo).
+
 --device="dispositivo": Reemplaza "dispositivo" con el nombre del dispositivo de audio a capturar.
+
 tee: Permite ver la salida mientras se redirige a otro proceso.
+
 sox -t raw -r 44100 -e signed -b 16 -c 2 - output.wav: Procesa la salida cruda de parec y la guarda en un archivo de audio llamado output.wav.
+
 /dev/null: Descarta la salida de tee en la terminal para mantenerla limpia.
